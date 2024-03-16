@@ -26,7 +26,7 @@ const Food = ({ food, handleCart }) => {
             <h3 className="text-xl font-semibold">Ingredients 6</h3>
             <div>
               {ingredients.map((ingredient, idx) => (
-                <ol key={idx}>{ingredient}</ol>
+                <li key={idx}>{ingredient}</li>
               ))}
             </div>
           </div>

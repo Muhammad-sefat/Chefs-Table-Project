@@ -9,10 +9,10 @@ const Foods = () => {
   const handleCart = (food) => {
     setCarts([...carts, food]);
   };
-  const handleCooking = (id) => {
-    const remainingCooking = carts.filter((cart) => cart.id !== id);
-    console.log(remainingCooking);
-    setCooking(remainingCooking);
+  const handleCooking = (cart, id) => {
+    const remainingCooking = carts.filter((cart) => cart.recipe_id !== id);
+    setCooking([...cooking, cart]);
+    setCarts(remainingCooking);
   };
   useEffect(() => {
     fetch("food.json")
