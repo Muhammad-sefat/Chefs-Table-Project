@@ -12,6 +12,7 @@ const Food = ({ food, handleCart }) => {
     ingredients,
     recipe_id,
   } = food;
+  console.log(ingredients);
   return (
     <div>
       <div className="card bg-base-100 shadow-xl pt-5 border p-5 rounded-lg h-full">
@@ -25,9 +26,9 @@ const Food = ({ food, handleCart }) => {
           <div className="py-4">
             <h3 className="text-xl font-semibold">Ingredients 6</h3>
             <div>
-              {ingredients.map((ingredient, idx) => (
-                <li key={idx}>{ingredient}</li>
-              ))}
+              {ingredients.map((ingredient, idx) => {
+                return <li key={idx}>{ingredient}</li>;
+              })}
             </div>
           </div>
           <hr />
