@@ -12,10 +12,10 @@ const Food = ({ food }) => {
   } = food;
   return (
     <div className="flex justify-between">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:w-[65%]">
+      <div className="p-5 md:w-[65%] grid grid-cols-2 gap-5">
         <div className="card bg-base-100 shadow-xl pt-5 border p-5 rounded-lg">
           <figure>
-            <img className="rounded-lg" src={recipe_image} alt="Shoes" />
+            <img className="rounded-lg w-full" src={recipe_image} alt="Shoes" />
           </figure>
           <div className="text-start">
             <h2 className="text-xl font-semibold py-2">{recipe_name}</h2>
