@@ -2,7 +2,7 @@ import { CiStopwatch } from "react-icons/ci";
 import { AiOutlineFire } from "react-icons/ai";
 import PropTypes from "prop-types";
 
-const Food = ({ food }) => {
+const Food = ({ food, handleCart }) => {
   const {
     recipe_name,
     recipe_image,
@@ -40,7 +40,10 @@ const Food = ({ food }) => {
               </h2>
             </div>
           </div>
-          <button className="px-4 py-3 bg-[#0BE58A] rounded-xl">
+          <button
+            onClick={() => handleCart(food)}
+            className="px-4 py-3 bg-[#0BE58A] rounded-xl"
+          >
             Want To Cook
           </button>
         </div>
@@ -50,6 +53,7 @@ const Food = ({ food }) => {
 };
 Food.propTypes = {
   food: PropTypes.object.isRequired,
+  handleCart: PropTypes.func.isRequired,
 };
 
 export default Food;
