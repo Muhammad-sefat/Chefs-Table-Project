@@ -16,10 +16,18 @@ const Foods = () => {
         vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum
         mauris aenean neque.
       </p>
-      <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-5">
-        {foods.map((food) => (
-          <Food key={food.id} food={food}></Food>
-        ))}
+      <div className="flex pt-10">
+        <div className="md:w-[67%] grid grid-cols-1 md:grid-cols-2 gap-5">
+          {foods.map((food) => (
+            <Food key={food.id} food={food}></Food>
+          ))}
+        </div>
+        <div className="md:w-[30%] px-5">
+          <div className="border p-5 rounded-xl">
+            <h1>Want to Cook : 01</h1>
+            <hr className="my-3" />
+          </div>
+        </div>
       </div>
     </div>
   );

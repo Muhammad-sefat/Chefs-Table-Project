@@ -1,5 +1,6 @@
 import { CiStopwatch } from "react-icons/ci";
 import { AiOutlineFire } from "react-icons/ai";
+import PropTypes from "prop-types";
 
 const Food = ({ food }) => {
   const {
@@ -14,11 +15,7 @@ const Food = ({ food }) => {
     <div>
       <div className="card bg-base-100 shadow-xl pt-5 border p-5 rounded-lg h-full">
         <figure>
-          <img
-            className="rounded-lg w-full h-full"
-            src={recipe_image}
-            alt="Shoes"
-          />
+          <img className="rounded-lg w-full" src={recipe_image} alt="Shoes" />
         </figure>
         <div className="text-start">
           <h2 className="text-xl font-semibold py-2">{recipe_name}</h2>
@@ -50,6 +47,9 @@ const Food = ({ food }) => {
       </div>
     </div>
   );
+};
+Food.propTypes = {
+  food: PropTypes.object.isRequired,
 };
 
 export default Food;
