@@ -16,7 +16,11 @@ const Foods = () => {
         vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum
         mauris aenean neque.
       </p>
-      <Food></Food>
+      <div>
+        {foods.map((food) => (
+          <Food key={food.id} food={food}></Food>
+        ))}
+      </div>
     </div>
   );
 };

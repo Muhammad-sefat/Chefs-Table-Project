@@ -2,7 +2,7 @@
   {
     "recipe_id": "r001",
     "recipe_name": "Spaghetti Carbonara",
-    "recipe_image": "spaghetti_carbonara.jpg",
+    "recipe_image": "https://i.ibb.co/sbvmjRR/food-01.jpg",
     "short_description": "Classic Italian pasta dish with creamy sauce.",
     "preparing_time": "30 minutes",
     "calories": 450,
@@ -18,7 +18,7 @@
   {
     "recipe_id": "r002",
     "recipe_name": "Grilled Chicken Caesar Salad",
-    "recipe_image": "grilled_chicken_caesar_salad.jpg",
+    "recipe_image": "https://i.ibb.co/WtMm93v/food-02.jpg",
     "short_description": "Refreshing salad with grilled chicken and Caesar dressing.",
     "preparing_time": "25 minutes",
     "calories": 320,
@@ -34,7 +34,7 @@
   {
     "recipe_id": "r003",
     "recipe_name": "Vegetable Stir-Fry",
-    "recipe_image": "vegetable_stir_fry.jpg",
+    "recipe_image": "https://i.ibb.co/zNkRdqf/food-03.jpg",
     "short_description": "Quick and healthy stir-fry packed with colorful vegetables.",
     "preparing_time": "20 minutes",
     "calories": 250,
@@ -51,7 +51,7 @@
   {
     "recipe_id": "r004",
     "recipe_name": "Homemade Margherita Pizza",
-    "recipe_image": "margherita_pizza.jpg",
+    "recipe_image": "https://i.ibb.co/GHMRNCX/food-04.jpg",
     "short_description": "Classic pizza with simple yet flavorful toppings.",
     "preparing_time": "35 minutes",
     "calories": 380,
@@ -68,7 +68,7 @@
   {
     "recipe_id": "r005",
     "recipe_name": "Thai Red Curry",
-    "recipe_image": "thai_red_curry.jpg",
+    "recipe_image": "https://i.ibb.co/Lk4ygTt/food-05.jpg",
     "short_description": "Rich and aromatic Thai curry with tender chicken or tofu.",
     "preparing_time": "40 minutes",
     "calories": 380,
@@ -85,7 +85,7 @@
   {
     "recipe_id": "r006",
     "recipe_name": "Chocolate Chip Cookies",
-    "recipe_image": "chocolate_chip_cookies.jpg",
+    "recipe_image": "https://i.ibb.co/b222d4t/food-06.jpg",
     "short_description": "Classic homemade cookies with gooey chocolate chips.",
     "preparing_time": "15 minutes",
     "calories": 150,
