@@ -10,6 +10,7 @@ const Food = ({ food, handleCart }) => {
     preparing_time,
     calories,
     ingredients,
+    recipe_id,
   } = food;
   return (
     <div>
@@ -43,7 +44,7 @@ const Food = ({ food, handleCart }) => {
             </div>
           </div>
           <button
-            onClick={() => handleCart(food)}
+            onClick={() => handleCart(food, recipe_id)}
             className="px-4 py-3 bg-[#0BE58A] rounded-xl"
           >
             Want To Cook

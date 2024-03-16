@@ -4,9 +4,15 @@ import Food from "../Food/Food";
 const Foods = () => {
   const [foods, setFoods] = useState([]);
   const [carts, setCarts] = useState([]);
+  const [cooking, setCooking] = useState([]);
 
   const handleCart = (food) => {
     setCarts([...carts, food]);
+  };
+  const handleCooking = (id) => {
+    const remainingCooking = carts.filter((cart) => cart.id !== id);
+    console.log(remainingCooking);
+    setCooking(remainingCooking);
   };
   useEffect(() => {
     fetch("food.json")
@@ -42,16 +48,43 @@ const Foods = () => {
                   <th>Calories</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="bg-gray-100 p-3">
                 {carts.map((cart) => {
                   return (
                     <tr key={cart.id}>
                       <td>{cart.recipe_name}</td>
                       <td>{cart.preparing_time}</td>
                       <td>{cart.calories} Calories</td>
-                      <button className="px-3 py-2 bg-[#0BE58A] rounded-xl">
+                      <button
+                        onClick={() => handleCooking(cart, cart.recipe_id)}
+                        className="px-3 py-2 bg-[#0BE58A] rounded-xl"
+                      >
                         Preparing
                       </button>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            <h2 className="text-xl font-semibold mt-6">
+              Currently Cooking : {cooking.length}
+            </h2>
+            <hr className="my-5" />
+            <table className="table-auto">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Time</th>
+                  <th>Calories</th>
+                </tr>
+              </thead>
+              <tbody className="bg-gray-100 p-3">
+                {cooking.map((cook) => {
+                  return (
+                    <tr key={cook.id}>
+                      <td>{cook.recipe_name}</td>
+                      <td>{cook.preparing_time}</td>
+                      <td>{cook.calories} Calories</td>
                     </tr>
                   );
                 })}
