@@ -1,0 +1,103 @@
+[
+  {
+    "recipe_id": "r001",
+    "recipe_name": "Spaghetti Carbonara",
+    "recipe_image": "spaghetti_carbonara.jpg",
+    "short_description": "Classic Italian pasta dish with creamy sauce.",
+    "preparing_time": "30 minutes",
+    "calories": 450,
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta, diced",
+      "2 large eggs",
+      "50g grated Parmesan cheese",
+      "2 cloves garlic, minced",
+      "Salt and black pepper to taste"
+    ]
+  },
+  {
+    "recipe_id": "r002",
+    "recipe_name": "Grilled Chicken Caesar Salad",
+    "recipe_image": "grilled_chicken_caesar_salad.jpg",
+    "short_description": "Refreshing salad with grilled chicken and Caesar dressing.",
+    "preparing_time": "25 minutes",
+    "calories": 320,
+    "ingredients": [
+      "2 boneless, skinless chicken breasts",
+      "1 head romaine lettuce, chopped",
+      "1/2 cup Caesar dressing",
+      "1/4 cup grated Parmesan cheese",
+      "1 cup croutons",
+      "Salt and black pepper to taste"
+    ]
+  },
+  {
+    "recipe_id": "r003",
+    "recipe_name": "Vegetable Stir-Fry",
+    "recipe_image": "vegetable_stir_fry.jpg",
+    "short_description": "Quick and healthy stir-fry packed with colorful vegetables.",
+    "preparing_time": "20 minutes",
+    "calories": 250,
+    "ingredients": [
+      "1 cup broccoli florets",
+      "1 cup sliced bell peppers",
+      "1 cup sliced carrots",
+      "1 cup snap peas",
+      "2 tablespoons soy sauce",
+      "2 tablespoons sesame oil",
+      "2 cloves garlic, minced"
+    ]
+  },
+  {
+    "recipe_id": "r004",
+    "recipe_name": "Homemade Margherita Pizza",
+    "recipe_image": "margherita_pizza.jpg",
+    "short_description": "Classic pizza with simple yet flavorful toppings.",
+    "preparing_time": "35 minutes",
+    "calories": 380,
+    "ingredients": [
+      "1 pizza dough",
+      "1/2 cup marinara sauce",
+      "1 cup fresh mozzarella, sliced",
+      "2 tomatoes, sliced",
+      "Fresh basil leaves",
+      "1 tablespoon olive oil",
+      "Salt and black pepper to taste"
+    ]
+  },
+  {
+    "recipe_id": "r005",
+    "recipe_name": "Thai Red Curry",
+    "recipe_image": "thai_red_curry.jpg",
+    "short_description": "Rich and aromatic Thai curry with tender chicken or tofu.",
+    "preparing_time": "40 minutes",
+    "calories": 380,
+    "ingredients": [
+      "1 can (14 oz) coconut milk",
+      "2 tablespoons red curry paste",
+      "1 lb chicken breast or tofu, diced",
+      "1 red bell pepper, sliced",
+      "1 onion, sliced",
+      "1 tablespoon fish sauce (optional)",
+      "Fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_id": "r006",
+    "recipe_name": "Chocolate Chip Cookies",
+    "recipe_image": "chocolate_chip_cookies.jpg",
+    "short_description": "Classic homemade cookies with gooey chocolate chips.",
+    "preparing_time": "15 minutes",
+    "calories": 150,
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1/2 cup unsalted butter, softened",
+      "1/2 cup brown sugar",
+      "1/4 cup granulated sugar",
+      "1 teaspoon vanilla extract",
+      "1/2 teaspoon baking soda",
+      "1/4 teaspoon salt",
+      "1 cup chocolate chips"
+    ]
+  }
+]
