@@ -23,9 +23,11 @@ const Food = ({ food, handleCart }) => {
           <hr />
           <div className="py-4">
             <h3 className="text-xl font-semibold">Ingredients 6</h3>
-            <p>hello</p>
-            <p>hello</p>
-            <p>hello</p>
+            <div>
+              {ingredients.map((ingredient, idx) => (
+                <ol key={idx}>{ingredient}</ol>
+              ))}
+            </div>
           </div>
           <hr />
           <div className="flex items-center gap-5 py-5">

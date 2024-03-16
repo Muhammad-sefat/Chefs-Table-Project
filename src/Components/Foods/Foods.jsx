@@ -22,33 +22,41 @@ const Foods = () => {
         vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum
         mauris aenean neque.
       </p>
-      <div className="flex pt-10 p-5 md:px-16">
-        <div className="md:w-[67%] grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="flex pt-10 p-5 md:px-10">
+        <div className="md:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-5">
           {foods.map((food) => (
             <Food key={food.id} food={food} handleCart={handleCart}></Food>
           ))}
         </div>
         <div className="md:w-[40%] px-5">
           <div className="border p-5 rounded-xl">
-            <h1>Want to Cook : 01</h1>
+            <h1 className="text-xl font-semibold">
+              Want to Cook : {carts.length}
+            </h1>
             <hr className="my-3" />
-            <div className="flex justify-between py-3">
-              <p>Name</p>
-              <p>Time</p>
-              <p>Calories</p>
-            </div>
-            {carts.map((cart) => {
-              return (
-                <div key={cart.id} className="flex justify-between space-y-3">
-                  <p className="pt-3">{cart.recipe_name.slice(0, 10)}</p>
-                  <p>{cart.preparing_time}</p>
-                  <p>{cart.calories}</p>
-                  <button className="p-1 bg-[#0BE58A] rounded-full">
-                    Preparing
-                  </button>
-                </div>
-              );
-            })}
+            <table className="table-auto">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Time</th>
+                  <th>Calories</th>
+                </tr>
+              </thead>
+              <tbody>
+                {carts.map((cart) => {
+                  return (
+                    <tr key={cart.id}>
+                      <td>{cart.recipe_name}</td>
+                      <td>{cart.preparing_time}</td>
+                      <td>{cart.calories} Calories</td>
+                      <button className="px-3 py-2 bg-[#0BE58A] rounded-xl">
+                        Preparing
+                      </button>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
