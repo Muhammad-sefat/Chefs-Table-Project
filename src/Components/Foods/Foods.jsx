@@ -16,9 +16,11 @@ const Foods = () => {
         vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum
         mauris aenean neque.
       </p>
-      {foods.map((food) => (
-        <Food key={food.id} food={food}></Food>
-      ))}
+      <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-5">
+        {foods.map((food) => (
+          <Food key={food.id} food={food}></Food>
+        ))}
+      </div>
     </div>
   );
 };
