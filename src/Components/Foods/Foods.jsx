@@ -43,7 +43,7 @@ const Foods = () => {
         health benefits, and sensory experiences, and enhancing our appreciation
         for food.
       </p>
-      <div className="flex pt-10 p-5 md:px-10">
+      <div className="flex flex-col md:flex-row pt-10 p-5 md:px-10">
         <div className="md:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-5">
           {foods.map((food) => (
             <Food key={food.id} food={food} handleCart={handleCart}></Food>

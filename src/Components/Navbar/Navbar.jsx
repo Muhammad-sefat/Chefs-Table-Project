@@ -1,8 +1,8 @@
 import { CiSearch } from "react-icons/ci";
-import { MdManageAccounts } from "react-icons/md";
+import { FcBusinessman } from "react-icons/fc";
 const Navbar = () => {
   return (
-    <div className="p-5 md:px-16 flex justify-between">
+    <div className="p-5 md:px-16 flex justify-between flex-col md:flex-row space-y-3 md:space-y-0">
       <h1 className="text-3xl font-bold">Recipe Clories</h1>
       <div className="space-x-4">
         <a>Home</a>
@@ -11,11 +11,11 @@ const Navbar = () => {
         <a>Search</a>
       </div>
       <div className="flex items-center gap-2">
-        <div className="flex items-center gap-2 p-1 bg-gray-300 rounded-lg">
-          <CiSearch></CiSearch>
+        <div className="flex items-center gap-2 p-2 bg-gray-300 rounded-full">
+          <CiSearch className="text-xl"></CiSearch>
           <input className="bg-gray-300" type="text" placeholder="Search" />
         </div>
-        <MdManageAccounts className="text-4xl bg-[#0BE58A] p-2 rounded-full"></MdManageAccounts>
+        <FcBusinessman className="text-4xl bg-[#0BE58A] p-2 rounded-full hidden md:inline-block"></FcBusinessman>
       </div>
     </div>
   );

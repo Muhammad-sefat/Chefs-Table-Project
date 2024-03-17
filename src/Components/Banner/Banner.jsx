@@ -2,7 +2,7 @@ import cooker from "../../assets/cooker.png";
 const Banner = () => {
   return (
     <div
-      className="bg-center bg-cover md:h-[80vh] rounded-lg p-5 mx-16 my-8 text-white flex justify-center items-center text-center"
+      className="bg-center bg-cover md:h-[80vh] rounded-lg p-5 md:mx-16 my-8 text-white flex justify-center items-center text-center"
       style={{ backgroundImage: `url(${cooker})` }}
     >
       <div>
