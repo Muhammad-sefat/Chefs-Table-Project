@@ -27,7 +27,9 @@ const Food = ({ food, handleCart }) => {
           <p className="pb-2">{short_description}</p>
           <hr />
           <div className="py-4">
-            <h3 className="text-xl font-semibold">Ingredients 6</h3>
+            <h3 className="text-xl font-semibold">
+              Ingredients {ingredients.length}
+            </h3>
             <div>
               {ingredients.map((ingredient, idx) => {
                 return <li key={idx}>{ingredient}</li>;

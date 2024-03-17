@@ -2,7 +2,7 @@ import { CiSearch } from "react-icons/ci";
 import { FcBusinessman } from "react-icons/fc";
 const Navbar = () => {
   return (
-    <div className="p-5 md:px-16 flex justify-between flex-col md:flex-row space-y-3 md:space-y-0">
+    <div className="p-5 md:px-16 flex justify-between items-center flex-col md:flex-row space-y-3 md:space-y-0">
       <h1 className="text-3xl font-bold">Recipe Calories</h1>
       <div className="space-x-4">
         <a>Home</a>
