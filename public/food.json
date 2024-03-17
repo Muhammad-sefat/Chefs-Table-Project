@@ -4,7 +4,7 @@
     "recipe_name": "Spaghetti Carbonara",
     "recipe_image": "https://i.ibb.co/sbvmjRR/food-01.jpg",
     "short_description": "Classic Italian pasta dish with creamy sauce.",
-    "preparing_time": "30 minutes",
+    "preparing_time": 30,
     "calories": 450,
     "ingredients": [
       "200g spaghetti",
@@ -20,7 +20,7 @@
     "recipe_name": "Grilled Chicken Caesar Salad",
     "recipe_image": "https://i.ibb.co/WtMm93v/food-02.jpg",
     "short_description": "Refreshing salad with grilled chicken and Caesar dressing.",
-    "preparing_time": "25 minutes",
+    "preparing_time": 25,
     "calories": 320,
     "ingredients": [
       "2 boneless, skinless chicken breasts",
@@ -36,7 +36,7 @@
     "recipe_name": "Vegetable Stir-Fry",
     "recipe_image": "https://i.ibb.co/zNkRdqf/food-03.jpg",
     "short_description": "Quick and healthy stir-fry packed with colorful vegetables.",
-    "preparing_time": "20 minutes",
+    "preparing_time": 20,
     "calories": 250,
     "ingredients": [
       "1 cup broccoli florets",
@@ -53,7 +53,7 @@
     "recipe_name": "Homemade Margherita Pizza",
     "recipe_image": "https://i.ibb.co/GHMRNCX/food-04.jpg",
     "short_description": "Classic pizza with simple yet flavorful toppings.",
-    "preparing_time": "35 minutes",
+    "preparing_time": 35,
     "calories": 380,
     "ingredients": [
       "1 pizza dough",
@@ -70,7 +70,7 @@
     "recipe_name": "Thai Red Curry",
     "recipe_image": "https://i.ibb.co/Lk4ygTt/food-05.jpg",
     "short_description": "Rich and aromatic Thai curry with tender chicken or tofu.",
-    "preparing_time": "40 minutes",
+    "preparing_time": 40,
     "calories": 380,
     "ingredients": [
       "1 can (14 oz) coconut milk",
@@ -87,7 +87,7 @@
     "recipe_name": "Chocolate Chip Cookies",
     "recipe_image": "https://i.ibb.co/b222d4t/food-06.jpg",
     "short_description": "Classic homemade cookies with gooey chocolate chips.",
-    "preparing_time": "15 minutes",
+    "preparing_time": 15,
     "calories": 150,
     "ingredients": [
       "1 cup all-purpose flour",

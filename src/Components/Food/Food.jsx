@@ -34,7 +34,7 @@ const Food = ({ food, handleCart }) => {
           <div className="flex items-center gap-5 py-5">
             <div className="flex items-center gap-2">
               <CiStopwatch className="text-2xl" />
-              <h2 className="text-base">{preparing_time}</h2>
+              <h2 className="text-base">{preparing_time} minutes</h2>
             </div>
             <div className="flex items-center gap-2">
               <AiOutlineFire className="text-2xl" />

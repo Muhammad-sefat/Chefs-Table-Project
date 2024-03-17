@@ -7,6 +7,8 @@ const Foods = () => {
   const [foods, setFoods] = useState([]);
   const [carts, setCarts] = useState([]);
   const [cooking, setCooking] = useState([]);
+  const [preparingTime, setPreparingTime] = useState(0);
+  const [calories, setCalories] = useState(0);
 
   const handleCart = (food, id) => {
     const isExist = carts.find((cart) => cart.recipe_id == id);
@@ -18,7 +20,9 @@ const Foods = () => {
       });
     }
   };
-  const handleCooking = (cart, id) => {
+  const handleCooking = (cart, id, time, calorie) => {
+    setPreparingTime(preparingTime + time);
+    setCalories(calories + calorie);
     const remainingCooking = carts.filter((cart) => cart.recipe_id !== id);
     setCooking([...cooking, cart]);
     setCarts(remainingCooking);
@@ -60,17 +64,21 @@ const Foods = () => {
                 </tr>
               </thead>
               <tbody className="bg-gray-100 p-3">
-                {carts.map((cart, idx) => {
-                  {
-                    idx;
-                  }
+                {carts.map((cart) => {
                   return (
                     <tr key={cart.id}>
                       <td>{cart.recipe_name}</td>
-                      <td>{cart.preparing_time}</td>
+                      <td>{cart.preparing_time} minutes</td>
                       <td>{cart.calories} Calories</td>
                       <button
-                        onClick={() => handleCooking(cart, cart.recipe_id)}
+                        onClick={() =>
+                          handleCooking(
+                            cart,
+                            cart.recipe_id,
+                            cart.preparing_time,
+                            cart.calories
+                          )
+                        }
                         className="px-3 py-2 bg-[#0BE58A] rounded-xl"
                       >
                         Preparing
@@ -97,13 +105,21 @@ const Foods = () => {
                   return (
                     <tr key={cook.id}>
                       <td>{cook.recipe_name}</td>
-                      <td>{cook.preparing_time}</td>
+                      <td>{cook.preparing_time} minutes</td>
                       <td>{cook.calories} Calories</td>
                     </tr>
                   );
                 })}
               </tbody>
             </table>
+            <div className="pt-5">
+              <p className="text-lg font-medium py-2">
+                Total Time : {preparingTime} minutes
+              </p>
+              <p className="text-lg font-medium ">
+                Total calories : {calories} calories
+              </p>
+            </div>
           </div>
         </div>
       </div>
