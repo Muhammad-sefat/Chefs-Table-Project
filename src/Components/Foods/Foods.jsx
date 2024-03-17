@@ -21,7 +21,7 @@ const Foods = () => {
   }, []);
 
   return (
-    <div className="md:pt-28 text-center">
+    <div className="text-center">
       <h2 className="text-3xl font-bold py-3">Our Recipe</h2>
       <p className="md:w-[60%] mx-auto text-[#666]">
         Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
