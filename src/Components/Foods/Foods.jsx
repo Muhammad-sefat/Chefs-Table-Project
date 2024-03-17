@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Food from "../Food/Food";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Foods = () => {
   const [foods, setFoods] = useState([]);
@@ -11,7 +13,9 @@ const Foods = () => {
     if (!isExist) {
       setCarts([...carts, food]);
     } else {
-      alert("You Have Already Selected");
+      toast("You Have Already Selected", {
+        position: "top-center",
+      });
     }
   };
   const handleCooking = (cart, id) => {
@@ -27,6 +31,7 @@ const Foods = () => {
 
   return (
     <div className="text-center">
+      <ToastContainer></ToastContainer>
       <h2 className="text-3xl font-bold py-3">Our Recipe</h2>
       <p className="md:w-[60%] mx-auto text-[#666]">
         Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
