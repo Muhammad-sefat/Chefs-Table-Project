@@ -36,7 +36,7 @@ const Foods = () => {
   return (
     <div className="text-center">
       <ToastContainer></ToastContainer>
-      <h2 className="text-3xl font-bold py-3">Our Recipe</h2>
+      <h2 className="text-3xl font-bold py-3">Our Recipes</h2>
       <p className="md:w-[60%] mx-auto text-[#666]">
         Cooking recipes are important because they provide guidance,
         consistency, learning opportunities, cultural connections, inspiration,
