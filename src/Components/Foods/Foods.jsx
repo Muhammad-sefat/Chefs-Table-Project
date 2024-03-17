@@ -34,9 +34,10 @@ const Foods = () => {
       <ToastContainer></ToastContainer>
       <h2 className="text-3xl font-bold py-3">Our Recipe</h2>
       <p className="md:w-[60%] mx-auto text-[#666]">
-        Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-        vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum
-        mauris aenean neque.
+        Cooking recipes are important because they provide guidance,
+        consistency, learning opportunities, cultural connections, inspiration,
+        health benefits, and sensory experiences, and enhancing our appreciation
+        for food.
       </p>
       <div className="flex pt-10 p-5 md:px-10">
         <div className="md:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-5">

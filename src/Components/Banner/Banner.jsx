@@ -10,9 +10,9 @@ const Banner = () => {
           Discover an exceptional cooking <br /> class tailored for you!z
         </h2>
         <p className="p-5 md:w-[80%] mx-auto">
-          Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
-          Database and solve 500+ coding problems to become an exceptionally
-          well world-class Programmer.
+          Food is maybe the only universal thing that really has the power to
+          bring everyone together. no matter what culter,everywhere around the
+          world,people get together to eat.
         </p>
         <div>
           <button className="px-3 py-2 rounded-full bg-[#0BE58A] text-black font-medium mr-5">
