@@ -6,8 +6,13 @@ const Foods = () => {
   const [carts, setCarts] = useState([]);
   const [cooking, setCooking] = useState([]);
 
-  const handleCart = (food) => {
-    setCarts([...carts, food]);
+  const handleCart = (food, id) => {
+    const isExist = carts.find((cart) => cart.recipe_id == id);
+    if (!isExist) {
+      setCarts([...carts, food]);
+    } else {
+      alert("You Have Already Selected");
+    }
   };
   const handleCooking = (cart, id) => {
     const remainingCooking = carts.filter((cart) => cart.recipe_id !== id);
@@ -49,7 +54,10 @@ const Foods = () => {
                 </tr>
               </thead>
               <tbody className="bg-gray-100 p-3">
-                {carts.map((cart) => {
+                {carts.map((cart, idx) => {
+                  {
+                    idx;
+                  }
                   return (
                     <tr key={cart.id}>
                       <td>{cart.recipe_name}</td>

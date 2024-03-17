@@ -12,7 +12,6 @@ const Food = ({ food, handleCart }) => {
     ingredients,
     recipe_id,
   } = food;
-  console.log(ingredients);
   return (
     <div>
       <div className="card bg-base-100 shadow-xl pt-5 border p-5 rounded-lg h-full">
